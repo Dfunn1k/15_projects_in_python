@@ -19,6 +19,5 @@ def check_anagram(word1, word2):
     for char in word1:
         if char in check_list:
             check_list.remove(char)
-    if len(check_list) == 0:
-        return True
-    return False
+    return len(check_list) == 0
+
